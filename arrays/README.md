@@ -205,6 +205,52 @@ We'll explore Binary Search later in the chapter.
 
 > *Appending to the end assumes there is available space.
 
+
+> ## Accessing vs Searching an Array
+
+### Accesing an Array
+Although these terms are often used interchangeably, they describe two different operations.
+
+Example:
+```
+numbers = [10, 20, 30, 40, 50]
+
+print(numbers[2])
+```
+Output:
+```
+30
+```
+
+The computer doesn't look through the array to find the value. Instead, it calculates the memory address directly using the index.
+Since no searching is required, accessing an array takes O(1)
+
+Regardless of whether the array contains:
+
+10 elements
+1,000 elements
+1,000,000 elements
+
+Accessing index 2 takes approximately the same amount of time.
+
+### Searching an array
+Searching means finding the position of a value when you don't know where it is.
+
+Example:
+```
+numbers = [10, 20, 30, 40, 50]
+
+target = 40
+```
+The computer must compare elements until it finds the target.
+In the worst case, every element must be checked.
+
+Searching an unsorted array therefore takes:
+```
+O(n).
+```
+---
+
 > # Static vs Dynamic Arrays
 ## Static Arrays
 The size is fixed when the array is created.
