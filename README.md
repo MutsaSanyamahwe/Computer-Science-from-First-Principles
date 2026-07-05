@@ -212,7 +212,7 @@ The deeper your understanding of these concepts, the easier it becomes to learn 
 
 If you're interested in how these foundational concepts come together to build large-scale applications, check out my companion repository:
 
-- 📘 **System Design from First Principles**
+-  **System Design from First Principles**
 
 Together, these repositories cover both the building blocks of Computer Science and how they are applied to design scalable, reliable software systems.
 
