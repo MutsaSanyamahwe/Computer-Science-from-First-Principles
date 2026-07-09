@@ -1,6 +1,6 @@
 # Computer Science from First Principles
 
-> Learn Computer Science the way experienced engineers think about it — by understanding **why** concepts exist before learning **how** they work.
+> Learn Computer Science the way experienced engineers think about it—by understanding **why** concepts exist before learning **how** they work, then reinforcing that knowledge through **hands-on implementation**.
 
 Most resources teach Computer Science as a collection of disconnected topics:
 
@@ -17,7 +17,7 @@ This repository takes a different approach.
 
 Every concept starts with the problem it was designed to solve, explains the reasoning behind the solution, explores how it works internally, and finishes with where you'll encounter it in real-world software systems.
 
-The goal isn't to memorize implementations—it's to build intuition.
+The goal isn't to memorize implementations—it's to build intuition through explanation, visualization, and practice.
 
 ---
 
@@ -37,7 +37,7 @@ Whether you're learning your first hash map or revisiting memory management afte
 
 # Learning Philosophy
 
-Every concept follows the same structure:
+Every concept follows the same learning path.
 
 ## 1. The Problem
 
@@ -61,10 +61,10 @@ A step-by-step explanation of the internal mechanics.
 
 Where appropriate, concepts include:
 
-- diagrams
-- visual explanations
-- pseudocode
-- code examples
+- Diagrams
+- Visual explanations
+- Pseudocode
+- Implementation walkthroughs
 
 ---
 
@@ -96,99 +96,147 @@ Each chapter concludes with common interview questions and concise answers to re
 
 ---
 
-# Repository Roadmap
+## 7. Hands-On Practice
+
+Learning doesn't stop at theory.
+
+Every topic includes practical coding exercises such as:
+
+- Implementing the data structure or algorithm from scratch
+- Solving classic interview problems
+- Exploring edge cases
+- Comparing different implementations
+- Understanding time and space complexity through code
+
+The goal is to bridge the gap between theory and real software engineering.
+
+---
+
+# Repository Structure
+
+Each topic follows the same structure for consistency.
+
+```text
+Topic/
+│
+├── README.md          # Theory and explanations
+├── .py                # Implementations
+
+
+```
+
+---
+
+# Learning Progress
 
 ## Foundations
 
-- Arrays
-- Linked Lists
-- Stacks
-- Queues
-- Hash Functions
-- Hash Tables
-- Hash Maps
+- [x] [Arrays](01_arrays/README.md)
+- [x] [Linked Lists](02-linked-lists/Linked-list.md)
+- [x] [Stacks](03-Stacks/stacks.md)
+- [x] [Queues](04-Queues/Queues.md)
+- [ ] Hash Functions
+- [ ] Hash Tables
+- [ ] Hash Maps
 
 ---
 
 ## Trees
 
-- Binary Trees
-- Binary Search Trees
-- AVL Trees
-- Red-Black Trees
-- B-Trees
-- B+ Trees
-- Tries
-- Segment Trees
-- Fenwick Trees
+- [ ] Binary Trees
+- [ ] Binary Search Trees
+- [ ] AVL Trees
+- [ ] Red-Black Trees
+- [ ] B-Trees
+- [ ] B+ Trees
+- [ ] Tries
+- [ ] Segment Trees
+- [ ] Fenwick Trees
 
 ---
 
 ## Graphs
 
-- Graph Representation
-- Breadth-First Search (BFS)
-- Depth-First Search (DFS)
-- Topological Sorting
-- Dijkstra's Algorithm
-- Minimum Spanning Trees
-- Union Find (Disjoint Set)
+- [ ] Graph Representation
+- [ ] Breadth-First Search (BFS)
+- [ ] Depth-First Search (DFS)
+- [ ] Topological Sorting
+- [ ] Dijkstra's Algorithm
+- [ ] Minimum Spanning Trees
+- [ ] Union Find (Disjoint Set)
 
 ---
 
 ## Algorithms
 
-- Sorting Algorithms
-- Searching Algorithms
-- Recursion
-- Divide and Conquer
-- Greedy Algorithms
-- Dynamic Programming
-- Backtracking
+- [ ] Sorting Algorithms
+- [ ] Searching Algorithms
+- [ ] Recursion
+- [ ] Divide and Conquer
+- [ ] Greedy Algorithms
+- [ ] Dynamic Programming
+- [ ] Backtracking
 
 ---
 
 ## Complexity
 
-- Big O Notation
-- Time Complexity
-- Space Complexity
-- Amortized Analysis
+- [ ] Big O Notation
+- [ ] Time Complexity
+- [ ] Space Complexity
+- [ ] Amortized Analysis
 
 ---
 
 ## Memory & Systems
 
-- Memory Layout
-- Stack vs Heap
-- Garbage Collection
-- CPU Cache
-- Locality of Reference
-- Virtual Memory
-- File Systems
+- [ ] Memory Layout
+- [ ] Stack vs Heap
+- [ ] Garbage Collection
+- [ ] CPU Cache
+- [ ] Locality of Reference
+- [ ] Virtual Memory
+- [ ] File Systems
 
 ---
 
 ## Concurrency
 
-- Processes
-- Threads
-- Locks
-- Mutexes
-- Semaphores
-- Deadlocks
-- Race Conditions
+- [ ] Processes
+- [ ] Threads
+- [ ] Locks
+- [ ] Mutexes
+- [ ] Semaphores
+- [ ] Deadlocks
+- [ ] Race Conditions
 
 ---
 
 ## Advanced Concepts
 
-- Bloom Filters
-- Skip Lists
-- Consistent Hashing
-- LSM Trees
-- Merkle Trees
-- CRDTs
+- [ ] Bloom Filters
+- [ ] Skip Lists
+- [ ] Consistent Hashing
+- [ ] LSM Trees
+- [ ] Merkle Trees
+- [ ] CRDTs
+
+---
+
+# Hands-On Learning
+
+Every topic includes practical exercises designed to reinforce the concepts.
+
+Examples include:
+
+- Building data structures from scratch
+- Implementing algorithms without relying on language libraries
+- Solving interview-style coding problems
+- Comparing multiple implementations
+- Measuring algorithm performance
+- Applying concepts to small real-world projects where appropriate
+
+The objective is not only to understand the theory, but also to gain confidence implementing and using these concepts in real software.
 
 ---
 
@@ -204,17 +252,17 @@ A heap isn't just used in coding exercises—it powers schedulers, priority queu
 
 A trie isn't just an interview question—it enables autocomplete, spell checkers, and search engines.
 
-The deeper your understanding of these concepts, the easier it becomes to learn databases, distributed systems, operating systems, networking, and system design.
+The deeper your understanding of these concepts, the easier it becomes to learn databases, operating systems, networking, distributed systems, and system design.
 
 ---
 
-# Related Repository
+# Companion Repository
 
 If you're interested in how these foundational concepts come together to build large-scale applications, check out my companion repository:
 
--  **System Design from First Principles**
+**System Design from First Principles**
 
-Together, these repositories cover both the building blocks of Computer Science and how they are applied to design scalable, reliable software systems.
+Together, these repositories provide a complete learning path from core Computer Science fundamentals to designing scalable, reliable software systems.
 
 ---
 
@@ -222,7 +270,7 @@ Together, these repositories cover both the building blocks of Computer Science 
 
 Contributions, corrections, and suggestions are always welcome.
 
-If you notice an error, have a better explanation, or want to improve an example, feel free to open an issue or submit a pull request.
+If you notice an error, have a clearer explanation, or would like to improve an example or exercise, feel free to open an issue or submit a pull request.
 
 ---
 
