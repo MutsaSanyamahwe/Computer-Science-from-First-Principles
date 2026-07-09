@@ -199,6 +199,7 @@ hashPassword()
 Each function is pushed onto the call stack.
 
 When a function finishes, it is popped.
+
 ---
 >  Undo/Redo
 Every user action is pushed.
