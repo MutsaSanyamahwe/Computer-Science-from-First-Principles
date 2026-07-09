@@ -217,6 +217,7 @@ Delete Circle
 ```
 
 Undo pops the latest action first.
+
 ---
 
 > Browser History
