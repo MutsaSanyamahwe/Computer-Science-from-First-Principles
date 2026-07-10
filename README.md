@@ -200,28 +200,6 @@ Topic/
 
 ---
 
-## Concurrency
-
-- [ ] Processes
-- [ ] Threads
-- [ ] Locks
-- [ ] Mutexes
-- [ ] Semaphores
-- [ ] Deadlocks
-- [ ] Race Conditions
-
----
-
-## Advanced Concepts
-
-- [ ] Bloom Filters
-- [ ] Skip Lists
-- [ ] Consistent Hashing
-- [ ] LSM Trees
-- [ ] Merkle Trees
-- [ ] CRDTs
-
----
 
 # Hands-On Learning
 
