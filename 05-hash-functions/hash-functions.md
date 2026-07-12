@@ -413,12 +413,6 @@ They are used to build:
 
 ---
 
-
-
-
-
-
-
-
-
-
+# Whats Next?
+Hash functions answer one question: How do we convert a key into a location?
+The next chapter, Hash Tables, answers the next question: Once we have that location, how do we actually store and retrieve data efficiently—even when collisions occur?
