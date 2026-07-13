@@ -137,7 +137,7 @@ Topic/
 - [x] [Queues](04-Queues/Queues.md)
 - [x] [Hash Functions](05-hash-functions/hash-functions.md)
 - [x] [Hash Tables](06-hash-tables/hash-tables.md)
-- [ ] Hash Maps
+- [x] [Hash Maps](06-hash-tables/hash-tables.md)
 
 ---
 
