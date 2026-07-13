@@ -490,11 +490,23 @@ Most programming languages provide built-in hash map implementations, including:
 
 In practice, the terms hash table and hash map are often used interchangeably. However, it's helpful to think of a hash table as the underlying computer science concept, while a hash map is the implementation that developers use in their programs.
 
----
+
 
 ---
 
-## 17. Key Takeaways
+## 17. Hash Maps vs Hash Tables
+
+Although the terms are often used interchangeably, there is a subtle difference.
+
+| Hash Table                                                               | Hash Map                                                                                 |
+| ------------------------------------------------------------------------ | ---------------------------------------------------------------------------------------- |
+| The underlying data structure that stores key-value pairs using hashing. | A concrete implementation of a hash table provided by a programming language or library. |
+| A computer science concept.                                              | A programming language data structure.                                                   |
+| Describes *how* key-value storage works.                                 | Describes *how developers use* that concept in code.                                     |
+
+---
+
+## 18. Key Takeaways
 - A hash table stores key-value pairs.
 - A hash function maps keys to bucket indices.
 - Hash tables provide O(1) average lookup, insertion, and deletion.
@@ -534,6 +546,9 @@ In practice, the terms hash table and hash map are often used interchangeably. H
 7. How do hash tables lead into concepts like consistent hashing?
 
 > Both rely on hashing to map keys, but consistent hashing extends the idea to distribute keys across multiple machines while minimizing remapping when servers are added or removed.
+
+8. What's the difference between a Hash Table and a Hash Map?
+> A hash table is the underlying data structure that stores key-value pairs using hashing. A HashMap is a specific implementation of that data structure provided by a programming language or a standard library. Different languages implement their hash maps with different optimizations, resizing strategies, collision handling, and concurrency characteristics.
 
 
 
