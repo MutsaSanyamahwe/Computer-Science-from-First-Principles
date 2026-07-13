@@ -87,7 +87,7 @@ Order Number
 ---
 
 
-###  VAalue
+###  Value
 The information associated with the key.
 
 ```
