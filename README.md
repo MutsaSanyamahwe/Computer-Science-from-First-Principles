@@ -135,8 +135,8 @@ Topic/
 - [x] [Linked Lists](02-linked-lists/Linked-list.md)
 - [x] [Stacks](03-Stacks/stacks.md)
 - [x] [Queues](04-Queues/Queues.md)
-- [ ] Hash Functions
-- [ ] Hash Tables
+- [x] [Hash Functions](05-hash-functions/hash-functions.md)
+- [x] [Hash Tables](06-hash-tables/hash-tables.md)
 - [ ] Hash Maps
 
 ---
