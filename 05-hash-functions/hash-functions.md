@@ -14,7 +14,7 @@ David
 
 Now suppose you want to check whether the username **Mutsa** exists.
 
-One approach is to search every username one by one.
+One approach is to search every username one by one until you find a match.
 
 ```
 Alice x
@@ -24,7 +24,7 @@ Charlie x
 Mutsa [found]
 ```
 
-In the worst case, you may have to inspect every element.
+This works, but it can be slow because, in the worst case, you may need to examine every element.
 
 For large datasets, this becomes inefficient.
 
@@ -58,44 +58,196 @@ Rather than searching through every element, we compute the hash and jump direct
 
 ## 3. How It Works
 
-A hash function accepts an input called a **key**.
-
-Examples:
+Suppose we want to store:
 
 ```text
-"apple"
-
-"banana"
-
-"user@email.com"
-
-12345
+Key   = "Mutsa"
+Value = 23
 ```
 
-Each input is transformed into a hash value.
+### Step 1 — Compute the Hash
+
+The key is passed into the hash function.
 
 ```text
-"apple"   → 734829
+"Mutsa"
 
-"banana"  → 183741
+        │
+        ▼
 
-"orange"  → 492018
+ Hash Function
+
+        │
+        ▼
+
+   583927
 ```
 
-The same input always produces the same hash.
-```text
-Hash("apple")
+Notice that nothing has been stored yet.
 
-↓
-
-734829
-```
-
-Every time.
+We have simply calculated a number.
 
 ---
 
-## 4. Desirable Properties of a Good Hash Function
+### Step 2 — Convert the Hash into an Array Index
+
+A hash table is typically built on top of an **array**.
+
+Imagine our array has 10 positions.
+
+```text
+Index
+
+0
+1
+2
+3
+4
+5
+6
+7
+8
+9
+```
+
+The hash value may be much larger than the array.
+
+So we convert it into a valid index.
+
+One common technique is the modulo operator (`%`).
+
+```text
+583927 % 10
+
+↓
+
+7
+```
+
+Now we know where the data belongs.
+
+---
+
+### Step 3 — Store the Data
+
+The hash table stores the data inside its underlying array.
+
+```text
+Index
+
+0
+
+1
+
+2
+
+3
+
+4
+
+5
+
+6
+
+7 → ("Mutsa", 23)
+
+8
+
+9
+```
+
+Notice what happened:
+
+- The **hash function** calculated a number.
+- The **hash table** converted that number into an array index.
+- The **array** actually stored the data.
+
+---
+
+
+## 4. Collisions
+
+Suppose another key also maps to index 7.
+
+```text
+Hash("Alice")
+
+↓
+
+123457
+
+123457 % 10
+
+↓
+
+7
+```
+
+Now we have a problem.
+
+Both values want the same location.
+
+```text
+Index
+
+7 → ?
+```
+
+This is called a **collision**.
+
+A collision occurs whenever two different keys map to the same location.
+
+---
+
+## 5. Resolving Collisions
+
+One common solution is called **Separate Chaining**.
+
+Instead of storing only one item, each array position stores the head of a linked list.
+
+```text
+Array
+
+0
+
+1
+
+2
+
+3
+
+4
+
+5
+
+6
+
+7
+│
+▼
+("Mutsa",23)
+      │
+      ▼
+("Alice",31)
+      │
+      ▼
+("John",28)
+
+8
+
+9
+```
+
+Now multiple items can share the same bucket.
+
+Some programming languages use linked lists.
+
+Others use different collision resolution strategies, such as **Open Addressing**, which we'll discuss when learning Hash Tables.
+
+
+---
+
+## 6. Desirable Properties of a Good Hash Function
 
 A good hash function should have several important properties.
 
@@ -193,46 +345,6 @@ When two different inputs produce the same hash value, a **collision** occurs.
 
 ---
 
-## 5. What Are Collisions?
-
-A collision happens when two different inputs generate the same hash.
-
-```text
-Alice
-
-↓
-
-205
-
-Bob
-
-↓
-
-205
-```
-
-Since two pieces of data cannot occupy the exact same location in a hash table, collisions must be handled.
-
-Common collision handling techniques include:
-
-- Separate Chaining
-- Open Addressing
-
-These are covered in the Hash Tables chapter.
-
----
-
-## 6. Time Complexity
-
-Computing a hash value is generally:
-
-| Operation | Complexity |
-|-----------|------------|
-| Compute Hash | O(1) |
-
-The exact complexity depends on the algorithm and the size of the key, but for typical applications it is considered constant time.
-
----
 
 ## 7. Advantages
 
