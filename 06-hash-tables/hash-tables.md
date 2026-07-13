@@ -474,7 +474,27 @@ Many distributed systems rely on the idea of mapping keys quickly and efficientl
 
 ---
 
-## 16. Key Takeaways
+## 16. Hash Maps
+
+A **Hash Map** is a concrete implementation of a hash table that stores data as key-value pairs.
+
+When a key-value pair is added, the hash map uses a hash function to determine where the data should be stored. Later, when the same key is used, it is hashed again to locate the associated value quickly.
+
+Most programming languages provide built-in hash map implementations, including:
+
+- Java `HashMap<K, V>`
+- Python `dict`
+- Javascript: `Map`
+- C# `Dictionary<TKey, TValue`
+- Go: `map[K]V`
+
+In practice, the terms hash table and hash map are often used interchangeably. However, it's helpful to think of a hash table as the underlying computer science concept, while a hash map is the implementation that developers use in their programs.
+
+---
+
+---
+
+## 17. Key Takeaways
 - A hash table stores key-value pairs.
 - A hash function maps keys to bucket indices.
 - Hash tables provide O(1) average lookup, insertion, and deletion.
