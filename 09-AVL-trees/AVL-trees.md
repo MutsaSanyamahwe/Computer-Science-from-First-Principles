@@ -55,6 +55,8 @@ The Balance Factor (BF) measures whether a node is balanced.
 Balance Factor = Height(Left Subtree) - Height(Right Subtree)
 ```
 
+
+
 Possible values:
 
 | Balance Factor  | Meaning                  |
@@ -64,6 +66,8 @@ Possible values:
 | +1              | Balanced                 |
 | Less than -1    | Right-heavy (Unbalanced) |
 | Greater than +1 | Left-heavy (Unbalanced)  |
+
+
 
 Example:
 
@@ -231,22 +235,20 @@ Examples include:
 AVL Trees demonstrate an important idea:
 
 > Maintaining additional information (such as subtree heights) can improve performance guarantees.
->
-> Although AVL trees are less common than Red-Black Trees in standard libraries, they illustrate how self-balancing trees achieve reliable performance.
->
-> They also prepare you for understanding:
->
-> - Red-Black Trees.
-> - B-Trees
-> - B+ Trees
->
-> These structures power many production systems.
->
-> ---
->
-> ## 11. BST vs AVL Tree
->
-> | Binary Search Tree                 | AVL Tree                            |
+
+ Although AVL trees are less common than Red-Black Trees in standard libraries, they illustrate how self-balancing trees achieve reliable performance.
+
+They also prepare you for understanding:
+
+ - Red-Black Trees.
+ - B-Trees
+ - B+ Trees
+
+ These structures power many production systems.
+ 
+---
+ ## 11. BST vs AVL Tree
+| Binary Search Tree                 | AVL Tree                            |
 | ---------------------------------- | ----------------------------------- |
 | May become unbalanced.             | Always remains balanced.            |
 | O(log n) average, O(n) worst case. | O(log n) guaranteed.                |
