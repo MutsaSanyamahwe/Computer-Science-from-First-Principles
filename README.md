@@ -143,9 +143,9 @@ Topic/
 
 ## Trees
 
-- [ ] Binary Trees
-- [ ] Binary Search Trees
-- [ ] AVL Trees
+- [x] [Binary Trees](07-binary-trees/binary-trees.md)
+- [x] [Binary Search Trees](08-binary-search-trees/binary-search-trees.md)
+- [x] [AVL Trees](09-AVL-trees/AVL-trees.md)
 - [ ] Red-Black Trees
 - [ ] B-Trees
 - [ ] B+ Trees
