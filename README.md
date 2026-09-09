@@ -146,8 +146,8 @@ Topic/
 - [x] [Binary Trees](07-binary-trees/binary-trees.md)
 - [x] [Binary Search Trees](08-binary-search-trees/binary-search-trees.md)
 - [x] [AVL Trees](09-AVL-trees/AVL-trees.md)
-- [ ] Red-Black Trees
-- [ ] B-Trees
+- [x] [Red-Black Trees](10-red-black-trees/red-black-trees.md)
+- [x] [B-Trees](11-B-trees/B-trees.md)
 - [ ] B+ Trees
 - [ ] Tries
 - [ ] Segment Trees
