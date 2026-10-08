@@ -321,7 +321,7 @@ cat
 
 ---
 
-## 8. Searching
+## 7. Searching
 
 Suppose the Trie contains:
 
@@ -382,7 +382,7 @@ The search follows one character at a time.
 
 ---
 
-## 9. Searchinh for a Prefix
+## 8. Searchinh for a Prefix
 
 This is where Tries become especially powerful.
 
@@ -425,7 +425,7 @@ This makes prefix searching extremely natural.
 
 ---
 
-## 10. Autocomplete
+## 9. Autocomplete
 
 This leads directly to one of the most recognizable applications of a Trie.
 
@@ -470,7 +470,7 @@ The system can discover all words sharing the prefix.
 
 ---
 
-## 11. Prefix Search vs Hash Tables
+## 10. Prefix Search vs Hash Tables
 
 This is an important comparison.
 
@@ -521,7 +521,7 @@ So:
 
 ---
 
-## 12. Complexity
+## 11. Complexity
 
 Let `L` be the length of the string.
 
@@ -561,7 +561,7 @@ The important point is that these operations depend primarily on the length of t
 
 ---
 
-## 13. The Cost of Tries
+## 12. The Cost of Tries
 
 Tries have an important trade-off.
 
@@ -606,7 +606,7 @@ Memory
 
 ---
 
-## 14. Trie vs Binary Search Tree
+## 13. Trie vs Binary Search Tree
 
 | **BST**                                 | **Trie**                                 |
 | --------------------------------------- | ---------------------------------------- |
@@ -625,7 +625,7 @@ The key difference is:
 
 ---
 
-## 15. Trie vs Hash Table
+## 14. Trie vs Hash Table
 
 | **Hash Table**                      | **Trie**                            |
 | ----------------------------------- | ----------------------------------- |
@@ -643,7 +643,7 @@ They solve different problems.
 
 ---
 
-## 16 Advantages
+## 15. Advantages
 
 - Fast string insertion.
 - Fast string lookup.
@@ -655,7 +655,7 @@ They solve different problems.
 
 ---
 
-## 17. Disadvantages
+## 16. Disadvantages
 
 - Can consume significant memory.
 - More complicated than a hash table for simple key-value lookup.
@@ -665,7 +665,7 @@ They solve different problems.
 
 ---
 
-## 18. Real-World Applications
+## 17. Real-World Applications
 
 Tries are useful when systems need to work with strings and prefixes.
 
@@ -716,7 +716,7 @@ A Trie can efficiently determine whether a sequence forms a valid word.
 
 ---
 
-## 19. The Big Picture
+## 18. The Big Picture
 
 Your tree progression now becomes:
 
