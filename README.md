@@ -148,8 +148,8 @@ Topic/
 - [x] [AVL Trees](09-AVL-trees/AVL-trees.md)
 - [x] [Red-Black Trees](10-red-black-trees/red-black-trees.md)
 - [x] [B-Trees](11-B-trees/B-trees.md)
-- [ ] B+ Trees
-- [ ] Tries
+- [x] [B+ Trees](12-B+Trees/B+Trees.md)
+- [x] [Tries](13-Tries/Tries.md)
 - [ ] Segment Trees
 - [ ] Fenwick Trees
 
