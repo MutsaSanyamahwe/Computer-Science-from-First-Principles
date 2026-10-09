@@ -150,8 +150,8 @@ Topic/
 - [x] [B-Trees](11-B-trees/B-trees.md)
 - [x] [B+ Trees](12-B+Trees/B+Trees.md)
 - [x] [Tries](13-Tries/Tries.md)
-- [ ] Segment Trees
-- [ ] Fenwick Trees
+- [x] [Segment Trees](14-Segment-Trees/Segment-Trees.md)
+- [x] [Fenwick Trees](15-Fenwick-Trees/Fenwick-Trees.md)
 
 ---
 
